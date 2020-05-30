@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: pavankumarpoc 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: pavankumarpoc 
+    spec:
+      containers:
+        - name: pavankumarpoc 
+          image: pavankumar.azurecr.io/pavankumarpoc
+          ports:
+          - containerPort: 80
