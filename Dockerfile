@@ -1,4 +1,5 @@
-#This is a sample Image 
-FROM centos 
-RUN yum install –y nginx 
-CMD [“echo”,”Image created”] 
+FROM alpine:3.4
+
+RUN apk update
+RUN apk add vim
+RUN apk add curl
